@@ -1,0 +1,125 @@
+html, body 
+{ 
+ overflow-x: hidden;
+}
+
+@media all and (min-width: 992px) {
+	.navbar .dropdown-menu-end{ right:0; left: auto;  }
+	.navbar .nav-item .dropdown-menu{  display:block; opacity: 0;  visibility: hidden; transition:.3s; margin-top:0;  }
+	.navbar .nav-item:hover .nav-link{ color: #fff;  }
+	.navbar .dropdown-menu.fade-down{ top:80%; transform: rotateX(-75deg); transform-origin: 0% 0%; }
+	.navbar .dropdown-menu.fade-up{ top:180%;  }
+	.navbar .nav-item:hover .dropdown-menu{ transition: .3s; opacity:1; visibility:visible; top:100%; transform: rotateX(0deg); }
+}	
+
+.form-select{
+  font-family: 'Josefin Sans', sans-serif;  
+}
+
+.navbar {
+  position: fixed;
+  transition: 1.2s;
+}
+.card-text{
+  color: black;
+}
+.texto{
+  color: black;
+}
+
+.dropdown-item{
+  font-family: 'Josefin Sans', sans-serif; ;
+  color: black;
+  font-size: 15px;
+}
+p,h5,h6{
+  font-family: 'Josefin Sans', sans-serif;
+}
+h1,h2,h3,h4{
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.nav-link {
+ 
+  padding: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+
+.nav-link:after {
+  content: '';
+  display: block;
+  border-bottom: 2px solid #D99A38;
+  transform: scaleX(0);
+  transition: .2s ease-in-out;
+}
+
+.nav-link:hover:after {
+  transform: scaleX(1);
+}
+
+
+.list-group-item-action {
+  padding-bottom: 10px;
+  padding-left: 10px;
+}
+@media(max-width: 900px){
+  .navbar-collapse{
+  background: #262626;
+  padding: 20px;
+}
+}
+
+#card1e,#card2e,#card3e{
+  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, .25), 0 3px 6px 9px rgba(0, 0, 0, 0.05) !important;
+  
+} 
+#logomaka {
+  max-width: 200px;
+  }
+
+//sidebar
+
+body {
+  background-color: #fbfbfb;
+}
+@media (min-width: 991.98px) {
+  main {
+    padding-left: 240px;
+  }
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 58px 0 0; /* Height of navbar */
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+  width: 240px;
+  z-index: 600;
+}
+
+@media (max-width: 991.98px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+.sidebar .active {
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
